@@ -1,0 +1,6 @@
+### ~ private ~ ###
+*.env
+
+### ~ Docker ~ ###
+/*.yml
+!/docker-compose.yml

@@ -1,0 +1,8 @@
+services:
+
+  backend:
+
+    build:
+      context: .
+    volumes:
+      - ./app:/go/src/project/app
