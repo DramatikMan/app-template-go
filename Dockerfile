@@ -1,5 +1,6 @@
-FROM golang
-SHELL ["/bin/bash", "-c"]
+FROM golang:alpine
 WORKDIR /go/src/project
-RUN go mod init
+COPY tools tools
+RUN cd tools && ./install.sh
+COPY go.mod go.work ./
 CMD sleep infinity
