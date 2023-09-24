@@ -8,8 +8,8 @@ require (
 	github.com/go-delve/delve v1.21.0
 	github.com/haya14busa/goplay v1.0.0
 	github.com/josharian/impl v1.2.0
-	golang.org/x/tools/gopls v0.13.1
-	honnef.co/go/tools v0.4.3
+	golang.org/x/tools/gopls v0.13.2
+	honnef.co/go/tools v0.4.6
 )
 
 require (
@@ -43,9 +43,9 @@ require (
 	golang.org/x/exp/typeparams v0.0.0-20221212164502-fae10dda9338 // indirect
 	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
-	golang.org/x/tools v0.11.2-0.20230801165449-23c7f589706c // indirect
+	golang.org/x/tools v0.12.1-0.20230825192346-2191a27a6dc5 // indirect
 	golang.org/x/vuln v0.0.0-20230110180137-6ad3e3d07815 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	mvdan.cc/gofumpt v0.4.0 // indirect
