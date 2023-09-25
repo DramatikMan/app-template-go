@@ -1,4 +1,4 @@
-FROM golang:1.21-alpine
+FROM golang:1.21.1-alpine
 WORKDIR /go/src/project
 COPY tools tools
 RUN tools/install.sh
