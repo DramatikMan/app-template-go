@@ -1,6 +1,6 @@
 module project/tools
 
-go 1.21
+go 1.21.3
 
 require (
 	github.com/cweill/gotests v1.6.0
@@ -8,7 +8,7 @@ require (
 	github.com/go-delve/delve v1.21.0
 	github.com/haya14busa/goplay v1.0.0
 	github.com/josharian/impl v1.2.0
-	golang.org/x/tools/gopls v0.13.2
+	golang.org/x/tools/gopls v0.14.0
 	honnef.co/go/tools v0.4.6
 )
 
@@ -39,14 +39,14 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	go.starlark.net v0.0.0-20220816155156-cfacd8902214 // indirect
 	golang.org/x/arch v0.0.0-20190927153633-4e8777c89be4 // indirect
-	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
 	golang.org/x/exp/typeparams v0.0.0-20221212164502-fae10dda9338 // indirect
-	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/sync v0.3.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
-	golang.org/x/text v0.11.0 // indirect
-	golang.org/x/tools v0.12.1-0.20230825192346-2191a27a6dc5 // indirect
-	golang.org/x/vuln v0.0.0-20230110180137-6ad3e3d07815 // indirect
+	golang.org/x/mod v0.13.0 // indirect
+	golang.org/x/sync v0.4.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/telemetry v0.0.0-20231011160506-788d5629a052 // indirect
+	golang.org/x/text v0.13.0 // indirect
+	golang.org/x/tools v0.14.1-0.20231024142323-35a647a9c3fc // indirect
+	golang.org/x/vuln v1.0.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	mvdan.cc/gofumpt v0.4.0 // indirect
 	mvdan.cc/xurls/v2 v2.4.0 // indirect
