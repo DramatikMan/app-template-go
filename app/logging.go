@@ -63,7 +63,8 @@ func (handler *customHandler) Handle(ctx context.Context, record slog.Record) er
 	case LevelInfo:
 		levelText = fmt.Sprintf("\033[30m\033[42m %s \033[0m", levelText)
 	case LevelWarning:
-		levelText = fmt.Sprintf("\033[30m\033[43m %s \033[0m", levelText)
+		levelName = "WARNING"
+		levelText = fmt.Sprintf("\033[30m\033[43m %s \033[0m", levelName)
 	case LevelError:
 		levelText = fmt.Sprintf("\033[30m\033[41m %s \033[0m", levelText)
 	case LevelFatal:
