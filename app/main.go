@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Println("Go environment.")
 
-	handler := clog.NewHandler(&slog.HandlerOptions{Level: clog.LevelTrace})
+	handler := clog.NewConsoleHandler(&slog.HandlerOptions{Level: clog.LevelTrace})
 	logger := slog.New(handler)
 	slog.SetDefault(logger)
 

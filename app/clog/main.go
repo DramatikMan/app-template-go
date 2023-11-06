@@ -1,6 +1,5 @@
+// colorized logging
 package clog
-
-// colorized console logging
 
 import (
 	"context"
@@ -19,7 +18,7 @@ const (
 	LevelFatal   = slog.Level(12)
 )
 
-func NewHandler(options *slog.HandlerOptions) *consoleHandler {
+func NewConsoleHandler(options *slog.HandlerOptions) *consoleHandler {
 	handler := &consoleHandler{
 		out:     os.Stdout,
 		options: options,
@@ -117,10 +116,10 @@ func (handler *consoleHandler) WithGroup(name string) slog.Handler {
 }
 
 func (handler *consoleHandler) withGroupOrAttrs(g group) slog.Handler {
-	newHandler := *handler
-	newHandler.groups = make([]group, len(handler.groups)+1)
-	copy(newHandler.groups, handler.groups)
-	newHandler.groups[len(newHandler.groups)-1] = g
+	NewConsoleHandler := *handler
+	NewConsoleHandler.groups = make([]group, len(handler.groups)+1)
+	copy(NewConsoleHandler.groups, handler.groups)
+	NewConsoleHandler.groups[len(NewConsoleHandler.groups)-1] = g
 
-	return &newHandler
+	return &NewConsoleHandler
 }
