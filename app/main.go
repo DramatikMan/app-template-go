@@ -4,7 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
-	"project/app/clog"
+
+	"github.com/dramatikman/clog"
 )
 
 func main() {
