@@ -1,5 +1,5 @@
 #!/bin/sh
-set -euxo pipefail
+set -e
 
 cd tools
 

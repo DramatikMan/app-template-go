@@ -1,6 +1,5 @@
-### ~ private ~ ###
+### ~ secret ~ ###
 *.env
 
-### ~ Docker ~ ###
-/*.yml
-!/docker-compose.yml
+### ~ development ~ ###
+# /scripts

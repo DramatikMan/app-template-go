@@ -1,8 +1,11 @@
 services:
 
-  dev:
+  main:
     build:
       context: .
+      target: builder
+    command: scripts/dev.sh
     volumes:
       - ./app:/go/src/project/app
       - ./tools:/go/src/project/tools
+      - ./scripts:/go/src/project/scripts

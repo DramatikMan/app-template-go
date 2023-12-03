@@ -1,9 +1,12 @@
 ### ~ Docker ~ ###
 .dockerignore
 Dockerfile
-*.yml
 
 ### ~ git ~ ###
 .git*
 LICENSE
 README.md
+
+### ~ development ~ ###
+docker-compose.yaml
+scripts
