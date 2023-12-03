@@ -1,5 +1,7 @@
-################## builder ##################
 ARG BUILDER_DOCKER_REGISTRY="docker.io/library"
+ARG DIST_DOCKER_REGISTRY="gcr.io/distroless"
+
+################## builder ##################
 FROM $BUILDER_DOCKER_REGISTRY/golang:1.21.4-alpine AS builder
 SHELL ["/bin/sh", "-c"]
 WORKDIR /go/src/project
@@ -13,8 +15,7 @@ COPY go.mod go.sum ./
 RUN go build -o /go/bin/app ./app
 
 ################## final ##################
-ARG DIST_DOCKER_REGISTRY="https://gcr.io/distroless"
-FROM gcr.io/distroless/static-debian11 AS final
+FROM $DIST_DOCKER_REGISTRY/static-debian11 AS final
 COPY --from=builder /go/bin/app /
 USER 1001
 CMD ["/app"]
