@@ -2,7 +2,7 @@ ARG BUILDER_DOCKER_REGISTRY="docker.io/library"
 ARG DIST_DOCKER_REGISTRY="gcr.io/distroless"
 
 ################## builder ##################
-FROM $BUILDER_DOCKER_REGISTRY/golang:1.21.4-alpine AS builder
+FROM $BUILDER_DOCKER_REGISTRY/golang:1.21.5-alpine AS builder
 SHELL ["/bin/sh", "-c"]
 WORKDIR /go/src/project
 USER 0
