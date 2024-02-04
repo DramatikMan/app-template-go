@@ -1,13 +1,13 @@
 module project/tools
 
-go 1.21.5
+go 1.21.6
 
 require (
 	github.com/cweill/gotests v1.6.0
 	github.com/fatih/gomodifytags v1.16.0
-	github.com/go-delve/delve v1.21.0
+	github.com/go-delve/delve v1.22.0
 	github.com/haya14busa/goplay v1.0.0
-	github.com/josharian/impl v1.2.0
+	github.com/josharian/impl v1.3.0
 	golang.org/x/tools/gopls v0.14.2
 	honnef.co/go/tools v0.4.6
 )
