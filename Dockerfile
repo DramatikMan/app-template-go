@@ -10,8 +10,9 @@ USER 0
 ARG GOPROXY="https://goproxy.io"
 ENV GOPROXY=$GOPROXY
 
-COPY app app
 COPY go.mod go.sum ./
+RUN go mod download
+COPY app app
 RUN go build -o /go/bin/app ./app
 
 ################## final ##################
